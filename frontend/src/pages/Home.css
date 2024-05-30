@@ -70,15 +70,13 @@ body {
 	width: 350px;
 }
 
-input.input-error,
-select.input-error {
-	border-width: 2px;
-	border-color: #ff0000;
+.pageContents form input.input-error {
+	border: 2px solid #f32828;
+	border-radius: 5px;
 	&:focus {
-		outline: solid 0 transparent;
+		outline: solid 2px transparent;
 		border-radius: 5px;
-		border: 1px solid;
-		border-color: #019889;
+		border: 2px solid #019889;
 	}
 }
 
@@ -86,7 +84,7 @@ select.input-error {
 	display: flex !important;
 	width: 100%;
 	flex-direction: row !important;
-	color: #ff0000;
+	color: #f32828;
 	font-size: 0.8rem;
 	justify-content: center;
 	align-items: center;
@@ -103,7 +101,7 @@ select.input-error {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	border-radius: 30px;
-	border: #2f2f2f 1.57px solid;
+	border: #019889 2px solid;
 	background-color: #00beac;
 	color: #ffffff;
 	font-size: 15px;
@@ -111,6 +109,7 @@ select.input-error {
 
 	&:hover {
 		background-color: #019889;
+		border: #00beac 2px solid;
 		cursor: pointer;
 	}
 
@@ -122,8 +121,10 @@ select.input-error {
 
 .submitButton:disabled {
 	background-color: #019889;
-	color: #575757;
+	color: #484848;
 	cursor: default;
+
+	border: 2px #484848 solid;
 
 	&:active {
 		transition: box-shadow 0.3;
