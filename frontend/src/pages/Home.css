@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+	font-size: 20px;
+	font-family: "Mulish", sans-serif;
+}
+
+.pageContainer {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: first baseline;
+	align-items: center;
+	background-color: #ffffff;
+}
+
+.pageTitle {
+	height: 100px;
+	font-weight: bold;
+	font-size: 36px;
+	background-color: #00beac;
+	width: 100%;
+	text-align: center;
+}
+
+.pageTitleText {
+	color: #ffffff;
+	margin-top: 25px;
+}
+
+.userForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pageContents {
+	margin-top: 100px;
+	width: 350px;
+	padding: 20px;
+	border: 3px #019889 solid;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+}
+
+.pageContents form input {
+	padding: 5px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	background-color: #ffffff;
+	border: 2px solid #00beac;
+	color: #019889;
+
+	&:focus {
+		border: 2px solid #019889;
+		outline: solid 0 transparent;
+	}
+
+	&::placeholder {
+		color: #019889;
+		font-weight: 500;
+		font-size: 12px;
+	}
+}
+
+.repoDetails {
+	width: 350px;
+}
+
+input.input-error,
+select.input-error {
+	border-width: 2px;
+	border-color: #ff0000;
+	&:focus {
+		outline: solid 0 transparent;
+		border-radius: 5px;
+		border: 1px solid;
+		border-color: #019889;
+	}
+}
+
+.error {
+	display: flex !important;
+	width: 100%;
+	flex-direction: row !important;
+	color: #ff0000;
+	font-size: 0.8rem;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.submitButton {
+	font-family: "Mulish", sans-serif;
+	padding: 0px;
+	width: 200px;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 30px;
+	border: #2f2f2f 1.57px solid;
+	background-color: #00beac;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 600;
+
+	&:hover {
+		background-color: #019889;
+		cursor: pointer;
+	}
+
+	&:active {
+		transition: box-shadow 0.3;
+		box-shadow: 0 0 15px #019889;
+	}
+}
+
+.submitButton:disabled {
+	background-color: #019889;
+	color: #575757;
+	cursor: default;
+
+	&:active {
+		transition: box-shadow 0.3;
+		box-shadow: 0 0 0px #019889;
+	}
+}
+
+.mainInfo {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+	justify-content: space-between;
+}
+
+.languages {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	justify-content: space-between;
+}
+
+.infoLabel {
+	font-weight: bold;
+}
+
+.Lang {
+	margin-left: -130px;
+	margin-bottom: 10px;
+}
